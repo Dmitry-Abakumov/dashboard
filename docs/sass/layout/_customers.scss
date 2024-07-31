@@ -36,8 +36,9 @@
   margin-right: -10px;
 }
 
-.customers__table-head {
-  color: var(--secondary-font-color);
+.customers__table-cell_head {
+  font-weight: 500;
+  color: var(--gray-color);
 }
 
 .customers__table-cell {
