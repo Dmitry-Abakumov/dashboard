@@ -63,6 +63,11 @@
     padding-right: 8px;
   }
 
+  .nav-menu__link_dashboard {
+    justify-content: flex-start;
+    gap: 14px;
+  }
+
   .nav-menu__content-wrap {
     display: flex;
     align-items: center;
