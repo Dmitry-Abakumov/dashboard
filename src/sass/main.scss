@@ -1,0 +1,13 @@
+@import "./utils/variables";
+
+@import "./base/common";
+
+@import "./components/logo";
+@import "./components/nav-menu";
+@import "./components/pagination";
+@import "./components/greeting";
+@import "./components/search";
+@import "./components/user";
+
+@import "./layout/header";
+@import "./layout/customers.scss";

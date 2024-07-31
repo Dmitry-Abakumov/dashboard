@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="icon" href="./images/favicon.ico" />
+  </head>
+  <body>
+    <header>
+      <div class="header__container">
+        <nav class="header__nav">
+          <a href="./" class="logo link">
+            <svg width="37" height="37" class="logo__icon">
+              <use href="./images/svg/sprite/sprite.svg#icon-logo"></use>
+            </svg>
+            <span class="logo__text-wrap">
+              Dashboard
+              <span class="logo__version">v.01</span>
+            </span>
+          </a>
+
+          <ul class="nav-menu list">
+            <li class="nav-menu__item">
+              <a href="#" class="nav-menu__link nav-menu__link_current link">
+                <svg width="24" height="24" class="nav-menu__icon">
+                  <use href="./images/svg/sprite/sprite.svg#icon-key"></use>
+                </svg>
+                Dashboard
+              </a>
+            </li>
+            <li class="nav-menu__item">
+              <a href="#" class="nav-menu__link link">
+                <span class="nav-menu__content-wrap">
+                  <svg width="24" height="24" class="nav-menu__icon">
+                    <use
+                      href="./images/svg/sprite/sprite.svg#icon-square"
+                    ></use>
+                  </svg>
+                  Product
+                </span>
+                <svg width="16" height="16" class="nav-menu__icon">
+                  <use href="./images/svg/sprite/sprite.svg#icon-arrow"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="nav-menu__item nav-menu__item_current">
+              <a href="#" class="nav-menu__link link">
+                <span class="nav-menu__content-wrap">
+                  <svg width="24" height="24" class="nav-menu__icon">
+                    <use href="./images/svg/sprite/sprite.svg#icon-user"></use>
+                  </svg>
+                  Customers
+                </span>
+                <svg width="16" height="16" class="nav-menu__icon">
+                  <use href="./images/svg/sprite/sprite.svg#icon-arrow"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="nav-menu__item">
+              <a href="#" class="nav-menu__link link">
+                <span class="nav-menu__content-wrap">
+                  <svg width="24" height="24" class="nav-menu__icon">
+                    <use href="./images/svg/sprite/sprite.svg#icon-money"></use>
+                  </svg>
+                  Income
+                </span>
+                <svg width="16" height="16" class="nav-menu__icon">
+                  <use href="./images/svg/sprite/sprite.svg#icon-arrow"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="nav-menu__item">
+              <a href="#" class="nav-menu__link link">
+                <span class="nav-menu__content-wrap">
+                  <svg width="24" height="24" class="nav-menu__icon">
+                    <use
+                      href="./images/svg/sprite/sprite.svg#icon-percent"
+                    ></use>
+                  </svg>
+                  Promote
+                </span>
+                <svg width="16" height="16" class="nav-menu__icon">
+                  <use href="./images/svg/sprite/sprite.svg#icon-arrow"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="nav-menu__item">
+              <a href="#" class="nav-menu__link link">
+                <span class="nav-menu__content-wrap">
+                  <svg height="24" width="24" class="nav-menu__icon">
+                    <use
+                      href="./images/svg/sprite/sprite.svg#icon-question"
+                    ></use>
+                  </svg>
+                  Help
+                </span>
+                <svg width="16" height="16" class="nav-menu__icon">
+                  <use href="./images/svg/sprite/sprite.svg#icon-arrow"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="user">
+          <img
+            src="./images/avatar.jpg"
+            alt="user"
+            width="42"
+            height="42"
+            class="user__img"
+          />
+          <div>
+            <p class="user__name">Evano</p>
+            <p class="user__position">Project Manager</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="main__container">
+        <div class="greeting">
+          <p class="greeting__message">
+            Hello Evano <span id="greeting__emoji">👋🏼</span>,
+          </p>
+        </div>
+        <section class="customers">
+          <div class="customers__container">
+            <div class="customers__title-subtitle-search-wrap">
+              <div class="customers__title-subtitle-wrap">
+                <h1 class="customers__title">All customers</h1>
+                <p class="customers__subtitle">Active members</p>
+              </div>
+
+              <div class="search__input-icon-wrap" for="search-input">
+                <input
+                  class="search__input"
+                  type="text"
+                  id="search-input"
+                  placeholder="Search"
+                />
+                <svg class="search__icon" width="24" height="24">
+                  <use href="./images/svg/sprite/sprite.svg#icon-search"></use>
+                </svg>
+              </div>
+            </div>
+
+            <table class="customers__table">
+              <thead class="customers__table-head">
+                <tr class="customers__table-line">
+                  <th class="customers__table-cell customers__table-cell_head">
+                    Customer Name
+                  </th>
+                  <th class="customers__table-cell customers__table-cell_head">
+                    Company
+                  </th>
+                  <th class="customers__table-cell customers__table-cell_head">
+                    Phone Number
+                  </th>
+                  <th class="customers__table-cell customers__table-cell_head">
+                    Email
+                  </th>
+                  <th class="customers__table-cell customers__table-cell_head">
+                    Country
+                  </th>
+                  <th class="customers__table-cell customers__table-cell_head">
+                    Status
+                  </th>
+                </tr>
+              </thead>
+              <tbody class="customers__tbody"></tbody>
+            </table>
+
+            <div class="pagination">
+              <p class="pagination__info">
+                Showing data 1 to 8 of 256K entries
+              </p>
+              <ul class="pagination__list list">
+                <li>
+                  <button
+                    class="pagination__item pagination_prev-btn"
+                    type="button"
+                  >
+                    <svg width="12" height="12" class="pagination__prev-icon">
+                      <use
+                        href="./images/svg/sprite/sprite.svg#icon-arrow"
+                      ></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="pagination__item pagination__item_current">1</li>
+                <li class="pagination__item">2</li>
+                <li class="pagination__item">3</li>
+                <li class="pagination__item">4</li>
+                <li>...</li>
+                <li class="pagination__item">40</li>
+                <li>
+                  <button
+                    class="pagination__item pagination_next-btn"
+                    type="button"
+                  >
+                    <svg width="12" height="12" class="pagination__next-icon">
+                      <use
+                        href="./images/svg/sprite/sprite.svg#icon-arrow"
+                      ></use>
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script type="module" src="./index.js"></script>
+    <script>
+      const emoji = document.getElementById("greeting__emoji");
+      let scale = 1;
+      let direction = 1;
+
+      function animate() {
+        scale += 0.01 * direction;
+        if (scale >= 1.25 || scale <= 1) {
+          direction *= -1;
+        }
+        emoji.style.transform = `translate(-50%, -50%) scale(${scale})`;
+        requestAnimationFrame(animate);
+      }
+
+      animate();
+    </script>
+  </body>
+</html>

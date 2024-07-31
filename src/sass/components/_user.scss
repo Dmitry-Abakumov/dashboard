@@ -1,0 +1,47 @@
+.user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.user__img {
+  border-radius: 100%;
+  overflow: hidden;
+
+  width: 30px;
+  height: 30px;
+}
+
+.user__name {
+  font-size: 12px;
+  letter-spacing: 0.01em;
+
+  color: var(--black-color);
+}
+
+.user__position {
+  font-size: 10px;
+
+  letter-spacing: 0.01em;
+
+  color: #757575;
+}
+
+@media screen and (min-width: 1200px) {
+  .user {
+    margin-top: 100%;
+  }
+
+  .user__img {
+    width: 42px;
+    height: 42px;
+  }
+
+  .user__name {
+    font-size: 14px;
+  }
+
+  .user__position {
+    font-size: 12px;
+  }
+}

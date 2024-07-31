@@ -1,0 +1,23 @@
+:root {
+  --black-color: #000000;
+  --white-color: #ffffff;
+  --green-color: #16c098;
+  --gray-color: #b5b7c0;
+  --primary-bg-color: #eeeeee;
+  --secondary-bg-color: #f9fbff;
+  --accent-color: #5932ea;
+  --primary-font: "Poppins", sans-serif;
+  --primary-font-color: #212121;
+  --secondary-font-color: #9197b3;
+
+  --active-status-font-color: #008767;
+  --active-status-bg-color: rgba(22, 192, 152, 0.38);
+  --inactive-status-font-color: #df0404;
+  --inactive-status-bg-color: #ffc5c5;
+
+  --primary-weight-font: 500;
+  --secondary-weight-font: 400;
+  --highlight-weight-font: 600;
+
+  --transition-dur-and-func: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
